@@ -86,7 +86,7 @@ plt.tight_layout()
 plt.show()
 
 # ---- Print summary ----
-print("For x = -3:" + str(target_fn(-3)))
-print("For x = 3:" + str(target_fn(3)))
+print("For x = -3: " + str(target_fn(-3)))
+print("For x = 3: " + str(target_fn(3)))
 for r in results:
     print(f"n={r['n_hidden']:2d} | "f"f(-3)={r['pred_-3']:.4f} | f(+3)={r['pred_+3']:.4f}")
