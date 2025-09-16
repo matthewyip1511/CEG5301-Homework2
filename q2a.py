@@ -93,4 +93,4 @@ plt.show()
 print("For x = -3: " + str(target_fn(-3)))
 print("For x = 3: " + str(target_fn(3)))
 for r in results:
-    print(f"Hidden units: {r[0]:3d} | f(-3)={r[2]:.4f}, f(3)={r[3]:.4f}")
+    print(f"n =  {r[0]:3d} | f(-3)={r[2]:.4f}, f(3)={r[3]:.4f}")

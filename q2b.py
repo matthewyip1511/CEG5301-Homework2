@@ -78,7 +78,7 @@ for idx, n in enumerate(hidden_sizes, 1):
     plt.plot(x_test.ravel(), y_test, '--', linewidth=1, label='True')
     plt.plot(x_test.ravel(), y_test_pred, '-', linewidth=1, label='MLP')
     plt.scatter(x_train.ravel(), y_train, s=8, alpha=0.6)
-    plt.title(f"Hidden neurons: {n}")
+    plt.title(f"n= {n}")
     if idx == 1:
         plt.legend(fontsize=8)
 
@@ -89,4 +89,4 @@ plt.show()
 print("For x = -3:" + str(target_fn(-3)))
 print("For x = 3:" + str(target_fn(3)))
 for r in results:
-    print(f"n={r['n_hidden']:2d}"f"f(-3)={r['pred_-3']:.4f} | f(+3)={r['pred_+3']:.4f}")
+    print(f"n={r['n_hidden']:2d} | "f"f(-3)={r['pred_-3']:.4f} | f(+3)={r['pred_+3']:.4f}")
